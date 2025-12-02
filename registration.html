@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>College Club Registration Form</title>
+  </head>
+  <body>
+    <h1>College Club Registration Form</h1>
+
+    <form>
+      <!-- Full Name -->
+      <label>Full Name:</label>
+      <input
+        type="text"
+        name="fullname"
+        placeholder="Enter your full name"
+        required
+      />
+      <br /><br />
+
+      <!-- Roll Number -->
+      <label>Roll Number:</label>
+      <input type="text" name="roll" placeholder="Enter roll number" required />
+      <br /><br />
+
+      <!-- Department -->
+      <label>Department:</label>
+      <input
+        type="text"
+        name="department"
+        placeholder="Enter department"
+        required
+      />
+      <br /><br />
+
+      <!-- Year of Study -->
+      <label>Year of Study:</label>
+      <select name="year" required>
+        <option value="">-- Select Year --</option>
+        <option value="1st">1st Year</option>
+        <option value="2nd">2nd Year</option>
+        <option value="3rd">3rd Year</option>
+        <option value="4th">4th Year</option>
+      </select>
+      <br /><br />
+
+      <!-- Gender -->
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="Male" required /> Male
+      <input type="radio" name="gender" value="Female" /> Female
+      <input type="radio" name="gender" value="Other" /> Other <br /><br />
+
+      <!-- Clubs -->
+      <label>Clubs Interested:</label><br />
+      <input type="checkbox" name="club" value="Music Club" /> Music Club <br />
+      <input type="checkbox" name="club" value="Dance Club" /> Dance Club <br />
+      <input type="checkbox" name="club" value="Coding Club" /> Coding Club
+      <br />
+      <input type="checkbox" name="club" value="Drama Club" /> Drama Club <br />
+      <input type="checkbox" name="club" value="Sports Club" /> Sports Club
+      <br /><br />
+
+      <!-- Email -->
+      <label>Email Address:</label>
+      <input type="email" name="email" placeholder="Enter email" required />
+      <br /><br />
+
+      <!-- Contact -->
+      <label>Contact Number:</label>
+      <input
+        type="tel"
+        name="contact"
+        placeholder="Enter contact number"
+        required
+      />
+      <br /><br />
+
+      <!-- DOB -->
+      <label>Date of Birth:</label>
+      <input type="date" name="dob" required />
+      <br /><br />
+
+      <!-- Profile Photo -->
+      <label>Upload Profile Photo:</label>
+      <input type="file" name="photo" accept="image/*" />
+      <br /><br />
+
+      <!-- Reason -->
+      <label>Reason for Joining:</label><br />
+      <textarea
+        name="reason"
+        placeholder="Write a short description..."
+        rows="4"
+        cols="40"
+        required
+      ></textarea>
+      <br /><br />
+
+      <!-- Buttons -->
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
